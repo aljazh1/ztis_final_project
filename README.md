@@ -33,7 +33,7 @@ Za vzpovstavitev projekta na vašem sistemu sledite naslednjim korakom:
 3. Zaženite naslednji ukaz:
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/aljazh1/ztis_final_project.git
 
 <a name="flask"></a>
 ### Vzpostavitev Flask API
