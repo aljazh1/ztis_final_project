@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "323f4b99-a217-49fa-ac30-1c10ba12ca76",
+		"name": "RIRS - projektna",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12104313"
+	},
+	"item": [
+		{
+			"name": "Izdelki",
+			"item": [
+				{
+					"name": "get item by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{RIRS_base_url}}/items/get_item/635c29f205bfa4fdcdb0e5ed",
+							"host": [
+								"{{RIRS_base_url}}"
+							],
+							"path": [
+								"items",
+								"get_item",
+								"635c29f205bfa4fdcdb0e5ed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{RIRS_base_url}}/items/get_items",
+							"host": [
+								"{{RIRS_base_url}}"
+							],
+							"path": [
+								"items",
+								"get_items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add item",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ime\": \"Laško pivo\",\r\n    \"vrsta\": \"pijača\",\r\n    \"slika\": \"https://cdn.shopify.com/s/files/1/0079/3211/7059/products/820x820_lasko-zlatorog-plc-05L_5c8c41db-1ae1-4c3b-9aa9-6cfc5dcc483a.jpg?v=1638351772\",\r\n    \"cena\": 1.24,\r\n    \"zaloga\": 24\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{RIRS_base_url}}/items/add_item",
+							"host": [
+								"{{RIRS_base_url}}"
+							],
+							"path": [
+								"items",
+								"add_item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update item",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cena\": 1.20,\r\n    \"zaloga\": 24\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{RIRS_base_url}}/items/update_item/635c282b8b04cc4d34571080",
+							"host": [
+								"{{RIRS_base_url}}"
+							],
+							"path": [
+								"items",
+								"update_item",
+								"635c282b8b04cc4d34571080"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{RIRS_base_url}}/items/delete_item/635c299405bfa4fdcdb0e5ec",
+							"host": [
+								"{{RIRS_base_url}}"
+							],
+							"path": [
+								"items",
+								"delete_item",
+								"635c299405bfa4fdcdb0e5ec"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "uporabniki",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{RIRS_base_url}}/login",
+							"host": [
+								"{{RIRS_base_url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{RIRS_base_url}}/register",
+							"host": [
+								"{{RIRS_base_url}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "naročila",
+			"item": [
+				{
+					"name": "get all orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{RIRS_base_url}}/orders/all",
+							"host": [
+								"{{RIRS_base_url}}"
+							],
+							"path": [
+								"orders",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get order by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{RIRS_base_url}}/orders/635d9457194d7518c6d0022d",
+							"host": [
+								"{{RIRS_base_url}}"
+							],
+							"path": [
+								"orders",
+								"635d9457194d7518c6d0022d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "new order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"izdelek_id\": \"635c29f205bfa4fdcdb0e5ed\",\r\n    \"naziv_placila\": \"Placilzo z kartico\",\r\n    \"metoda\": \"mastercard\",\r\n    \"stevilka_kartice\": \"SI553579436450\",\r\n    \"ime_na_kartici\": \"Janez Novak\",\r\n    \"datum_veljavnosti\": \"10/27/2026\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{RIRS_base_url}}/orders/new_order",
+							"host": [
+								"{{RIRS_base_url}}"
+							],
+							"path": [
+								"orders",
+								"new_order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "finish order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{RIRS_base_url}}/orders/finish_order/635d965f9a1d34ac74035cbc",
+							"host": [
+								"{{RIRS_base_url}}"
+							],
+							"path": [
+								"orders",
+								"finish_order",
+								"635d965f9a1d34ac74035cbc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "RIRS_base_url",
+			"value": "http://127.0.0.1:5000/api/v1",
+			"type": "string"
+		}
+	]
+}

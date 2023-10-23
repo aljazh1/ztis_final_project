@@ -1,0 +1,194 @@
+# Created by https://www.toptal.com/developers/gitignore/api/flask,react
+# Edit at https://www.toptal.com/developers/gitignore?templates=flask,react
+
+izdelek.csv
+narocilo.csv
+placilo.csv
+uporabnik.csv
+
+.idea/
+
+### Flask ###
+API/instance/*
+API/!instance/.gitignore
+API/.webassets-cache
+API/.env
+
+### Flask.Python Stack ###
+# Byte-compiled / optimized / DLL files
+API/__pycache__/
+API/*.py[cod]
+API/*$py.class
+
+# C extensions
+API/*.so
+
+# Distribution / packaging
+API/.Python
+API/build/
+API/develop-eggs/
+API/dist/
+API/downloads/
+API/eggs/
+API/.eggs/
+API/lib/
+API/lib64/
+API/parts/
+API/sdist/
+API/var/
+API/wheels/
+API/share/python-wheels/
+API/*.egg-info/
+API/.installed.cfg
+API/*.egg
+API/MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+API/*.manifest
+API/*.spec
+
+# Installer logs
+API/pip-log.txt
+API/pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+API/htmlcov/
+API/.tox/
+API/.nox/
+API/.coverage
+API/.coverage.*
+API/.cache
+API/nosetests.xml
+API/coverage.xml
+API/*.cover
+API/*.py,cover
+API/.hypothesis/
+API/.pytest_cache/
+API/cover/
+
+# Translations
+API/*.mo
+API/*.pot
+
+# Django stuff:
+API/*.log
+API/local_settings.py
+API/db.sqlite3
+API/db.sqlite3-journal
+
+# Flask stuff:
+API/instance/
+
+# Scrapy stuff:
+API/.scrapy
+
+# Sphinx documentation
+API/docs/_build/
+
+# PyBuilder
+API/.pybuilder/
+API/target/
+
+# Jupyter Notebook
+API/.ipynb_checkpoints
+
+# IPython
+API/profile_default/
+API/ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+API/.pdm.toml
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+API/__pypackages__/
+
+# Celery stuff
+API/celerybeat-schedule
+API/celerybeat.pid
+
+# SageMath parsed files
+API/*.sage.py
+
+# Environments
+API/.venv
+API/env/
+API/venv/
+API/ENV/
+API/env.bak/
+API/venv.bak/
+
+# Spyder project settings
+API/.spyderproject
+API/.spyproject
+
+# Rope project settings
+API/.ropeproject
+
+# mkdocs documentation
+API//site
+
+# mypy
+API/.mypy_cache/
+API/.dmypy.json
+API/dmypy.json
+
+# Pyre type checker
+API/.pyre/
+
+# pytype static type analyzer
+API/.pytype/
+
+# Cython debug symbols
+API/cython_debug/
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+#.idea/
+API/.idea
+web_app/.idea
+
+### react ###
+web_app/.DS_*
+web_app/logs
+web_app/**/*.backup.*
+web_app/**/*.back.*
+
+web_app/node_modules
+web_app/bower_components
+
+web_app/*.sublime*
+
+web_app/psd
+web_app/thumb
+web_app/sketch
+
+# End of https://www.toptal.com/developers/gitignore/api/flask,react
