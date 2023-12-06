@@ -1,7 +1,7 @@
 from bson import json_util
 from bson.objectid import ObjectId
 
-from app import ItemsCollection
+from .app import ItemsCollection
 
 def get_all_items():
     items = ItemsCollection.find()

@@ -1,5 +1,4 @@
-from app import UsersCollection
-from common import create_response
+from .app import UsersCollection
 
 def user_login(UN, PW):
     user = UsersCollection.find_one({'username': UN, 'password': PW})
