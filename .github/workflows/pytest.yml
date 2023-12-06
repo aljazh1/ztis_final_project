@@ -8,20 +8,23 @@ on:
       - master
 
 jobs:
-  test_user_microservice:
+  test_api:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: microservices/user_microservice
+        working-directory: API
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Python 3.10.10
+      - name: Set up Python 3.11.6
         uses: actions/setup-python@v1
         with:
-          python-version: 3.10.10
+          python-version: 3.11.6
       - name: Install requirements
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Pytest testing
+        env:
+          DB_USERNAME: ${{ secrets.DB_USERNAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         run: python -m pytest tests
